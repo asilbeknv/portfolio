@@ -33,6 +33,11 @@ const details: Record<string, Omit<Certificate, "id" | "image">> = {
     issuer: "Ustoz AI",
     year: "2026",
   },
+  "ustoz-mobilography.jpg": {
+    title: "Mobilography",
+    issuer: "Ustoz AI",
+    year: "2026",
+  },
   "udacity-frontend-development.jpg": {
     title: "Frontend Development",
     issuer: "Udacity",
