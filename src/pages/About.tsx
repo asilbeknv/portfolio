@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 
 const focus = [
@@ -56,10 +57,17 @@ const About = () => {
                     identities, building websites and Telegram bots, and running YouTube
                     channels where I share what I learn along the way.
                   </p>
-                  <p className="text-base text-gray-600 leading-relaxed">
+                  <p className="text-base text-gray-600 mb-10 leading-relaxed">
                     I am currently available for select projects. If you're working on
                     something interesting, I'd love to hear about it.
                   </p>
+                  <Link
+                    to="/certificates"
+                    className="text-sm uppercase tracking-[0.12em] font-medium text-black inline-flex items-center gap-2 group"
+                  >
+                    View certificates
+                    <span className="inline-block transition-transform group-hover:translate-x-1">→</span>
+                  </Link>
                 </div>
               </div>
             </div>

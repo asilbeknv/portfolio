@@ -165,6 +165,15 @@ export function Navbar({ variant = "light" }: NavbarProps) {
             </a>
           </div>
           <Link
+            to="/certificates"
+            className={cn(
+              "text-xs uppercase tracking-[0.12em] font-medium transition-opacity hover:opacity-60",
+              isDark ? "text-white" : "text-black"
+            )}
+          >
+            Certificates
+          </Link>
+          <Link
             to="/contact"
             className={cn(
               "text-xs uppercase tracking-[0.12em] font-medium transition-opacity hover:opacity-60",
