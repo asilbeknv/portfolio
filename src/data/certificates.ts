@@ -28,6 +28,11 @@ const details: Record<string, Omit<Certificate, "id" | "image">> = {
     issuer: "onlinedars.uz",
     year: "2021",
   },
+  "ustoz-ai-orqali-dasturlash.jpg": {
+    title: "AI orqali dasturlash",
+    issuer: "Ustoz AI",
+    year: "2026",
+  },
   "udacity-frontend-development.jpg": {
     title: "Frontend Development",
     issuer: "Udacity",
