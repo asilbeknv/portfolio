@@ -13,7 +13,21 @@ export interface Certificate {
 }
 
 const details: Record<string, Omit<Certificate, "id" | "image">> = {
-  // "google-ux-design.jpg": { title: "Google UX Design", issuer: "Coursera", year: "2024" },
+  "five-million-ai-prompters.jpg": {
+    title: "Five Million AI Prompters",
+    issuer: "Dubai Future Foundation",
+    year: "2026",
+  },
+  "socially-web-foundation.jpg": {
+    title: "Web Foundation",
+    issuer: "Socially Design Academy",
+    year: "2022",
+  },
+  "udacity-frontend-development.jpg": {
+    title: "Frontend Development",
+    issuer: "Udacity",
+    year: "2020",
+  },
 };
 
 const images = import.meta.glob<string>(
