@@ -23,6 +23,11 @@ const details: Record<string, Omit<Certificate, "id" | "image">> = {
     issuer: "Socially Design Academy",
     year: "2022",
   },
+  "onlinedars-super-photoshop.jpg": {
+    title: "Super Photoshop",
+    issuer: "onlinedars.uz",
+    year: "2021",
+  },
   "udacity-frontend-development.jpg": {
     title: "Frontend Development",
     issuer: "Udacity",
