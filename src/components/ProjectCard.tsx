@@ -64,6 +64,7 @@ export function ProjectCard({ project, index, variant = "large" }: ProjectCardPr
               src={project.heroImage}
               alt={project.title}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              style={{ objectPosition: project.heroImagePosition }}
             />
           ) : (
             <div className="absolute inset-0 flex items-center justify-center">

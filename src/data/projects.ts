@@ -15,6 +15,8 @@ export interface Project {
   tags: string[];
   color: string;
   heroImage?: string;
+  // Which part of the image to keep when the card crops it (CSS object-position)
+  heroImagePosition?: string;
   link?: string;
   fullDescription: string;
   galleryImages: string[];
@@ -47,6 +49,7 @@ export const projects: Project[] = [
     tags: ["WEBSITE", "DEVELOPMENT"],
     color: "hsl(348, 67%, 26%)",
     heroImage: jamoTextileImage,
+    heroImagePosition: "left center",
     link: "https://jamotextile.uz",
     fullDescription:
       'Sayt "JAMO Textile" — korporativ formalar ishlab chiqaruvchi kompaniya uchun ishlab chiqilgan. Unda kompaniya faoliyati, katalog, yangiliklar va bog\'lanish ma\'lumotlari kiritilgan.',
