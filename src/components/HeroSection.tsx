@@ -17,8 +17,22 @@ export function HeroSection() {
   const descOffset = scrollY * 0.15;
 
   return (
-    <section className="min-h-[60vh] flex items-end bg-black text-white pt-32 lg:pt-40 pb-8 overflow-hidden">
-      <div className="container">
+    <section className="relative min-h-[60vh] flex items-end bg-black text-white pt-32 lg:pt-40 pb-8 overflow-hidden">
+      {/* Background video */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover pointer-events-none motion-reduce:hidden"
+        src="/hero-bg.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+        aria-hidden="true"
+      />
+      {/* Darken the video so the text stays readable, and fade into the grid below */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black pointer-events-none" />
+
+      <div className="container relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-end">
           {/* Main Headline with Parallax */}
           <div 
